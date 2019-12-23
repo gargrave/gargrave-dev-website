@@ -1,14 +1,13 @@
 import * as React from 'react'
 
-import { IProjectDetail } from './Projects.types'
-
-import ProjectDetail from './Detail/ProjectDetail'
+import { IProjectDetail } from '../../types'
+import { ProjectDetail } from './Detail'
 
 import styles from './Projects.module.scss'
 
 export type ProjectsProps = { data: IProjectDetail[] }
 
-const Projects: React.FunctionComponent<ProjectsProps> = ({ data }) => {
+export const Projects: React.FC<ProjectsProps> = ({ data }) => {
   return (
     <section id="projects">
       <h2>Projects</h2>
@@ -43,5 +42,3 @@ const Projects: React.FunctionComponent<ProjectsProps> = ({ data }) => {
     </section>
   )
 }
-
-export default React.memo(Projects)

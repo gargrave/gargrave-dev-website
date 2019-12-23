@@ -1,11 +1,6 @@
 import * as React from 'react'
 
-import About from './components/About/About'
-import Education from './components/Education/Education'
-import Experience from './components/Experience/Experience'
-import Projects from './components/Projects/Projects'
-import Skills from './components/Skills/Skills'
-
+import { About, Education, Experience, Projects, Skills } from './components'
 import { educationData, experienceData, projectsData, skillsData } from './data'
 
 import styles from './App.module.scss'
@@ -17,7 +12,7 @@ const copyrightString = () => {
   return `© ${year} Gabe Hargrave`
 }
 
-const App: React.FunctionComponent<AppProps> = () => {
+export const App: React.FC<AppProps> = () => {
   return (
     <div className={styles.contentContainer}>
       <header role="banner">
@@ -43,5 +38,3 @@ const App: React.FunctionComponent<AppProps> = () => {
     </div>
   )
 }
-
-export default React.memo(App)

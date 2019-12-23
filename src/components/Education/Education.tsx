@@ -1,15 +1,12 @@
 import * as React from 'react'
-import Markdown from 'markdown-it'
 
-import { IEducationDetail } from './Education.types'
+import { IEducationDetail } from '../../types'
 
 import styles from './Education.module.scss'
 
-const md = new Markdown()
-
 export type EducationProps = { data: IEducationDetail[] }
 
-const Education: React.FunctionComponent<EducationProps> = ({ data }) => {
+export const Education: React.FC<EducationProps> = ({ data }) => {
   return (
     <section id="education">
       <h2>Education</h2>
@@ -23,5 +20,3 @@ const Education: React.FunctionComponent<EducationProps> = ({ data }) => {
     </section>
   )
 }
-
-export default React.memo(Education)

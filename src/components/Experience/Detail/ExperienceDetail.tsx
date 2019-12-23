@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Markdown from 'markdown-it'
 
-import { IExperienceDetail } from '../Experience.types'
+import { IExperienceDetail } from '../../../types'
 
 import styles from './ExperienceDetail.module.scss'
 
@@ -9,10 +9,11 @@ const md = new Markdown()
 
 export type ExperienceDetailProps = { detail: IExperienceDetail }
 
-const ExperienceDetail: React.FunctionComponent<ExperienceDetailProps> = ({
+export const ExperienceDetail: React.FC<ExperienceDetailProps> = ({
   detail,
 }) => {
   const { bullets, company, dates, jobTitle, summary } = detail
+
   return (
     <section className={styles.experienceDetail}>
       <div>
@@ -47,5 +48,3 @@ const ExperienceDetail: React.FunctionComponent<ExperienceDetailProps> = ({
     </section>
   )
 }
-
-export default React.memo(ExperienceDetail)

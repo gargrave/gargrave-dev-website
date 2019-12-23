@@ -1,6 +1,6 @@
-import { IProjectDetail } from '../components/Projects/Projects.types'
+import { IProjectDetail } from '../types'
 
-export const data: IProjectDetail[] = [
+export const projectsData: IProjectDetail[] = [
   {
     title: 'Gargame',
     subtitle: 'An HTML5/Canvas game engine written in TypeScript.',

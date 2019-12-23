@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Markdown from 'markdown-it'
 
-import { ISkillDetail } from './Skills.types'
+import { ISkillDetail } from '../../types'
 
 import styles from './Skills.module.scss'
 
@@ -9,7 +9,7 @@ const md = new Markdown()
 
 export type SkillsProps = { data: ISkillDetail[] }
 
-const Skills: React.FunctionComponent<SkillsProps> = ({ data }) => {
+export const Skills: React.FC<SkillsProps> = ({ data }) => {
   return (
     <section id="skills">
       <h2>Skills</h2>
@@ -33,5 +33,3 @@ const Skills: React.FunctionComponent<SkillsProps> = ({ data }) => {
     </section>
   )
 }
-
-export default React.memo(Skills)

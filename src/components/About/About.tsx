@@ -7,7 +7,7 @@ const GITHUB_LINK = 'https://github.com/gargrave'
 
 export type AboutProps = {}
 
-const About: React.FunctionComponent<AboutProps> = () => (
+export const About: React.FC<AboutProps> = () => (
   <section id="about">
     <h2>About</h2>
     <p>
@@ -36,5 +36,3 @@ const About: React.FunctionComponent<AboutProps> = () => (
     </ul>
   </section>
 )
-
-export default React.memo(About)

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Markdown from 'markdown-it'
 
-import { IProjectDetail } from '../Projects.types'
+import { IProjectDetail } from '../../../types'
 
 import styles from './ProjectDetail.module.scss'
 
@@ -9,9 +9,7 @@ export type ProjectDetailProps = { project: IProjectDetail }
 
 const md = new Markdown()
 
-const ProjectDetail: React.FunctionComponent<ProjectDetailProps> = ({
-  project,
-}) => {
+export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
   const { links, subtitle, summary, title } = project
   return (
     <div className={styles.projectDetail}>
@@ -48,5 +46,3 @@ const ProjectDetail: React.FunctionComponent<ProjectDetailProps> = ({
     </div>
   )
 }
-
-export default React.memo(ProjectDetail)

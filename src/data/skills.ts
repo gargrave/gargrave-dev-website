@@ -1,6 +1,6 @@
-import { ISkillDetail } from '../components/Skills/Skills.types'
+import { ISkillDetail } from '../types'
 
-export const data: ISkillDetail[] = [
+export const skillsData: ISkillDetail[] = [
   {
     title: 'JavaScript/TypeScript',
     subtitle: '(advanced)',

@@ -1,12 +1,11 @@
 import * as React from 'react'
 
-import { IExperienceDetail } from './Experience.types'
-
-import ExperienceDetail from './Detail/ExperienceDetail'
+import { IExperienceDetail } from '../../types'
+import { ExperienceDetail } from './Detail'
 
 export type ExperienceProps = { data: IExperienceDetail[] }
 
-const Experience: React.FunctionComponent<ExperienceProps> = ({ data }) => {
+export const Experience: React.FC<ExperienceProps> = ({ data }) => {
   return (
     <section id="experience">
       <h2>Experience</h2>
@@ -17,5 +16,3 @@ const Experience: React.FunctionComponent<ExperienceProps> = ({ data }) => {
     </section>
   )
 }
-
-export default React.memo(Experience)

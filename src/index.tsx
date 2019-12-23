@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 // import * as serviceWorker from './serviceWorker';
 // serviceWorker.unregister();
 
-import App from './App'
+import { App } from './App'
 
 import './index.scss'
 

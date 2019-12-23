@@ -1,6 +1,6 @@
-import { IExperienceDetail } from '../components/Experience/Experience.types'
+import { IExperienceDetail } from '../types'
 
-export const data: IExperienceDetail[] = [
+export const experienceData: IExperienceDetail[] = [
   {
     jobTitle: 'Senior Software Engineer',
     company: 'Vacasa',
