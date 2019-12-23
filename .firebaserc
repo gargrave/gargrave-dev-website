@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "gargrave-website-dev",
+    "prod": "gargrave-website-prod"
+  }
+}
