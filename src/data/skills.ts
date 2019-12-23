@@ -1,6 +1,6 @@
 import { ISkillDetail } from '../components/Skills/Skills.types'
 
-const data: ISkillDetail[] = [
+export const data: ISkillDetail[] = [
   {
     title: 'JavaScript/TypeScript',
     subtitle: '(advanced)',
@@ -38,5 +38,3 @@ const data: ISkillDetail[] = [
     subtitle: '(JavaScript, C#/Unity)',
   },
 ]
-
-export default data

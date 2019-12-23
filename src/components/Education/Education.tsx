@@ -12,25 +12,13 @@ export type EducationProps = { data: IEducationDetail[] }
 const Education: React.FunctionComponent<EducationProps> = ({ data }) => {
   return (
     <section id="education">
-      <h2>
-        <a href="#education">Education</a>
-      </h2>
+      <h2>Education</h2>
 
       {data.map((detail, i) => (
-        <ul key={i} className={styles.educationDetail}>
-          <li
-            className={styles.title}
-            dangerouslySetInnerHTML={{
-              __html: md.renderInline(detail.title),
-            }}
-          />
-
-          <li
-            dangerouslySetInnerHTML={{
-              __html: md.renderInline(detail.location),
-            }}
-          />
-        </ul>
+        <div className={styles.educationDetail} key={i}>
+          <h3>{detail.title}</h3>
+          <p>{detail.location}</p>
+        </div>
       ))}
     </section>
   )

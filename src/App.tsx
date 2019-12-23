@@ -6,11 +6,7 @@ import Experience from './components/Experience/Experience'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
 
-import aboutData from './data/about'
-import educationData from './data/education'
-import experienceData from './data/experience'
-import projectsData from './data/projects'
-import skillsData from './data/skills'
+import { educationData, experienceData, projectsData, skillsData } from './data'
 
 import styles from './App.module.scss'
 
@@ -21,29 +17,29 @@ const copyrightString = () => {
   return `© ${year} Gabe Hargrave`
 }
 
-const App: React.FC<AppProps> = () => {
+const App: React.FunctionComponent<AppProps> = () => {
   return (
-    <div>
-      <main className={styles.contentContainer}>
-        <header>
-          <h1 className={styles.title}>Gabe Hargrave</h1>
-        </header>
-        <hr />
+    <div className={styles.contentContainer}>
+      <header role="banner">
+        <h1 className={styles.title}>Gabe Hargrave</h1>
+      </header>
 
-        <About data={aboutData} />
-        <hr />
+      <main>
+        <hr aria-hidden="true" />
+        <About />
+        <hr aria-hidden="true" />
         <Skills data={skillsData} />
-        <hr />
+        <hr aria-hidden="true" />
         <Experience data={experienceData} />
-        <hr />
+        <hr aria-hidden="true" />
         <Education data={educationData} />
-        <hr />
+        <hr aria-hidden="true" />
         <Projects data={projectsData} />
-
-        <footer>
-          <p className={styles.copyright}>{copyrightString()}</p>
-        </footer>
       </main>
+
+      <footer role="contentinfo">
+        <p className={styles.copyright}>{copyrightString()}</p>
+      </footer>
     </div>
   )
 }

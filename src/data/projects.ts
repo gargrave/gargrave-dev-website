@@ -1,9 +1,9 @@
 import { IProjectDetail } from '../components/Projects/Projects.types'
 
-const data: IProjectDetail[] = [
+export const data: IProjectDetail[] = [
   {
     title: 'Gargame',
-    subtitle: 'HTML5/Canvas game engine written in TypeScript',
+    subtitle: 'An HTML5/Canvas game engine written in TypeScript.',
     summary: [
       'I have used quite a few different game engines over the years, both in JS/TS land and elsewhere, and there are always a few things I dislike about each of them.',
       'The main goals here are keeping the engine as simple as possible and minimizing external dependencies--all of course, while pursuing the pipe dream of creating "the game engine of my dreams" (whatever that means).',
@@ -11,7 +11,7 @@ const data: IProjectDetail[] = [
     ],
     links: [
       {
-        title: 'GitHub Repo',
+        title: 'Gargame on GitHub',
         url: 'https://github.com/gargrave/gargame',
       },
     ],
@@ -26,11 +26,11 @@ const data: IProjectDetail[] = [
     ],
     links: [
       {
-        title: 'Live Demo',
+        title: 'Bookly Jr. live demo',
         url: 'https://bookly-prod.firebaseapp.com/account/register',
       },
       {
-        title: 'Frontend Source @ GitHub',
+        title: 'Bookly Jr. on GitHub',
         url: 'https://github.com/gargrave/bookly-client-firebase',
       },
     ],
@@ -41,15 +41,15 @@ const data: IProjectDetail[] = [
       'A "books and authors" CRUD app. Track your favorite authors, then track their books! Amazing!',
     summary: [
       "I intentionally kept the design of this app simple so I could focus on learning the Hapi ecosystem. Eventually, I just didn't have enough time anymore to continue building both the frontend and backend, so I ultimately moved this project to Firebase.",
-      'Frontend built with [Quasar/Vue](https://github.com/quasarframework/quasar), backend built with [Hapi](https://github.com/hapijs/hapi). For more details, check out the demo and/or repos below!',
+      'Frontend built with [Quasar framework](https://github.com/quasarframework/quasar), backend built with [HapiJS framework](https://github.com/hapijs/hapi). For more details, check out the demo and/or repos below!',
     ],
     links: [
       {
-        title: 'Frontend Source @ GitHub',
+        title: 'Bookly Classic on GitHub (frontend)',
         url: 'https://github.com/gargrave/bookly-client-vue',
       },
       {
-        title: 'Backend Source @ GitHub',
+        title: 'Bookly Classic on GitHub (backend)',
         url: 'https://github.com/gargrave/bookly-server',
       },
     ],
@@ -60,20 +60,20 @@ const data: IProjectDetail[] = [
       'A "save it for later" bookmarking app, similar to Pocket or Google Keep.',
     summary: [
       "I have used Pocket and Keep off and on for a few years, and while I like them both, I also have many complaints about both of them. So I built this to include only the features I like without any of the extra junk I don't like.",
-      'Frontend built with [Vue](https://github.com/vuejs/vue) + [Element](https://github.com/ElemeFE/element), backend built with [Django REST Framework](https://github.com/encode/django-rest-framework). For more details, check out the demo and/or repos below!',
+      'Frontend built with [VueJS](https://github.com/vuejs/vue) + [Element UI](https://github.com/ElemeFE/element), backend built with [Django REST Framework](https://github.com/encode/django-rest-framework). For more details, check out the demo and/or repos below!',
       "**Note**: The backend is deployed on a free Heroku dyno, so if it takes a few seconds to spin up, don't panic! Everything is going to be okay, I promise!",
     ],
     links: [
       {
-        title: 'Live Demo',
+        title: 'Snippets live demo',
         url: 'https://www.snippets-app.com',
       },
       {
-        title: 'Frontend Source @ GitHub',
+        title: 'Snippets on GitHub (frontend)',
         url: 'https://github.com/gargrave/snippets-client',
       },
       {
-        title: 'Backend Source @ GitHub',
+        title: 'Snippets on GitHub (backend)',
         url: 'https://github.com/gargrave/snippets-server',
       },
     ],
@@ -83,20 +83,20 @@ const data: IProjectDetail[] = [
     subtitle: 'An app to tracking gaming habits.',
     summary: [
       'A fairly simple app to allow you to track your gaming habits. I used to have a strong, very non-scientific fixation with seeing what games I was playing when, and for how many days, so I guess long-story-short, I built an app to do just that.',
-      'Frontend built with [Quasar/Vue](https://github.com/quasarframework/quasar), backend built with [Django REST Framework](https://github.com/encode/django-rest-framework). For more details, check out the demo and/or repos below!',
+      'Frontend built with [Quasar framework](https://github.com/quasarframework/quasar), backend built with [Django REST Framework](https://github.com/encode/django-rest-framework). For more details, check out the demo and/or repos below!',
       "**Note**: The backend is deployed on a free Heroku dyno, so if it takes a few seconds to spin up, don't panic! Everything is going to be okay, I promise!",
     ],
     links: [
       {
-        title: 'Live Demo',
+        title: 'GameOn live demo',
         url: 'https://www.gameon-app.com',
       },
       {
-        title: 'Frontend Source @ GitHub',
+        title: 'GameOn on GitHub (frontend)',
         url: 'https://github.com/gargrave/gameon-client-quasar',
       },
       {
-        title: 'Backend Source @ GitHub',
+        title: 'GameOn on GitHub (backend)',
         url: 'https://github.com/gargrave/gameon-server',
       },
     ],
@@ -107,15 +107,15 @@ const data: IProjectDetail[] = [
     summary: [
       "This was the last game We Did It Games made before we came to the unspoken conclusion that we didn't really have time to work on games anymore. The design was kept extremely minimal for these reasons, but it still turned out to be a pretty fun game.",
       'The final game was built with Unity 5 (C#), and the original prototype was made in GameMaker. It only took us a month or two total to put all of this together--remember, kids: keep your projects realistically small, and you might actually finish them!',
-      'Watch the majestic launch trailer [here](https://youtu.be/c6pNwtvO1ME)! Then follow the link below to download your own copy!',
+      '[Watch the Space Junk launch trailer here](https://youtu.be/c6pNwtvO1ME)! Then follow the link below to download your own copy!',
     ],
     links: [
       {
-        title: "Download (It's Free)",
+        title: 'Space Junk game download',
         url: 'https://wediditgames.itch.io/space-junk',
       },
       {
-        title: 'Source @ GitHub',
+        title: 'Space Junk on GitHub',
         url: 'https://github.com/gargrave/SpaceJunk',
       },
     ],
@@ -125,19 +125,17 @@ const data: IProjectDetail[] = [
     subtitle: 'A very weird, short, hastily-made puzzle game.',
     summary: [
       'This is a backup/dump of a sort-of-crappy game I made in 2013 as one of those "make a game in a week" kinds of things. It\'s not exactly game-of-the-year material, but it\'s... something, I guess.',
-      "I used [LibGDX](https://github.com/libgdx/libgdx) for this one, and it's really the only game I ever completed in Java.",
+      "I used [LibGDX game engine](https://github.com/libgdx/libgdx) for this one, and it's really the only game I ever completed in Java.",
     ],
     links: [
       {
-        title: 'Download (Executable JAR)',
+        title: 'Fancy Plants game download',
         url: 'https://github.com/gargrave/fancy-plants/releases/tag/1.0',
       },
       {
-        title: 'Source @ GitHub',
+        title: 'Fancy Plants on GitHub',
         url: 'https://github.com/gargrave/fancy-plants',
       },
     ],
   },
 ]
-
-export default data

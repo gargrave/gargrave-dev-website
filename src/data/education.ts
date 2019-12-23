@@ -1,6 +1,6 @@
 import { IEducationDetail } from '../components/Education/Education.types'
 
-const data: IEducationDetail[] = [
+export const data: IEducationDetail[] = [
   {
     location: 'Portland Community College - Portland, OR',
     title: 'A.A.S in Computer Information Systems',
@@ -10,5 +10,3 @@ const data: IEducationDetail[] = [
     title: 'A.S. in Recording Arts',
   },
 ]
-
-export default data

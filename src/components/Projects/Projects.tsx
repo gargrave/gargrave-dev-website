@@ -11,9 +11,7 @@ export type ProjectsProps = { data: IProjectDetail[] }
 const Projects: React.FunctionComponent<ProjectsProps> = ({ data }) => {
   return (
     <section id="projects">
-      <h2>
-        <a href="#projects">Projects</a>
-      </h2>
+      <h2>Projects</h2>
 
       <p>
         A handful of non-work-related projects I have built when I have had some
@@ -25,13 +23,13 @@ const Projects: React.FunctionComponent<ProjectsProps> = ({ data }) => {
 
       <p>
         (There are more repos for a handful of various older and smaller
-        projects available{' '}
+        projects available on{' '}
         <a
           href="https://github.com/gargrave?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
         >
-          here
+          my GitHub profile
         </a>{' '}
         as well, but they are not as user-friendly as the ones listed below, so
         proceed at your own risk!)

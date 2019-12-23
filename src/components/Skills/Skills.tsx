@@ -12,9 +12,7 @@ export type SkillsProps = { data: ISkillDetail[] }
 const Skills: React.FunctionComponent<SkillsProps> = ({ data }) => {
   return (
     <section id="skills">
-      <h2>
-        <a href="#skills">Skills</a>
-      </h2>
+      <h2>Skills</h2>
 
       <ul className={styles.skillsList}>
         {data.map((skill, i) => (
