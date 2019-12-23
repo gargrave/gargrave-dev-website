@@ -1,0 +1,10 @@
+@import '../../mixins';
+
+.educationDetail {
+  @include cleanList;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}

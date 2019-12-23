@@ -1,0 +1,35 @@
+@import '../../../mixins';
+
+.experienceDetail + .experienceDetail {
+  margin-top: 32px;
+}
+
+.jobtitle {
+  margin: 3px 0;
+}
+
+.summary {
+  margin: 0;
+  margin-top: 0.75rem;
+}
+
+.bullets {
+  margin-top: 0.5rem;
+}
+
+.bulletPoint {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@include breakpointSmall {
+  .bullets {
+    padding: 1rem;
+  }
+}
+
+@include breakpointLarge {
+  .experienceDetail {
+    padding-left: 1rem;
+  }
+}
