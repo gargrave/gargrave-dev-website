@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "gargrave-website-dev",
+    "default": "gargrave-website-prod",
+    "dev": "gargrave-website-dev",
     "prod": "gargrave-website-prod"
   }
 }
