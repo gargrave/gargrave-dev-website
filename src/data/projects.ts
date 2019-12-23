@@ -2,6 +2,20 @@ import { IProjectDetail } from '../types'
 
 export const projectsData: IProjectDetail[] = [
   {
+    title: 'React Simple Select',
+    subtitle:
+      'A fairly small-ish implementation of a select-like component in React',
+    summary: [
+      'An experiment to try and build a "select-like" component in React. Inspired by **react-select**, but with the goal of having a simpler, more flexible API.',
+    ],
+    links: [
+      {
+        title: 'React Simple Select on GitHub',
+        url: 'https://github.com/gargrave/react-simple-select',
+      },
+    ],
+  },
+  {
     title: 'Gargame',
     subtitle: 'An HTML5/Canvas game engine written in TypeScript.',
     summary: [
@@ -64,10 +78,6 @@ export const projectsData: IProjectDetail[] = [
       "**Note**: The backend is deployed on a free Heroku dyno, so if it takes a few seconds to spin up, don't panic! Everything is going to be okay, I promise!",
     ],
     links: [
-      {
-        title: 'Snippets live demo',
-        url: 'https://www.snippets-app.com',
-      },
       {
         title: 'Snippets on GitHub (frontend)',
         url: 'https://github.com/gargrave/snippets-client',
