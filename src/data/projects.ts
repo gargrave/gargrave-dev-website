@@ -16,6 +16,19 @@ export const projectsData: IProjectDetail[] = [
     ],
   },
   {
+    title: 'React Magic List',
+    subtitle: 'A virtualized list component for React',
+    summary: [
+      'A minimal implementation of a React virtualized list component. I built this as part of a learning session I led to demonstrate the value of vritualized lists.',
+    ],
+    links: [
+      {
+        title: 'React Magic List on GitHub',
+        url: 'https://github.com/gargrave/react-magic-list',
+      },
+    ],
+  },
+  {
     title: 'Gargame',
     subtitle: 'An HTML5/Canvas game engine written in TypeScript.',
     summary: [

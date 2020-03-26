@@ -15,10 +15,10 @@ export const skillsData: ISkillDetail[] = [
   },
   {
     title: 'CSS pre-processors and frameworks',
-    subtitle: '(Sass, Less, Bootstrap, Material)',
+    subtitle: '(Sass, Styled Components, Bootstrap)',
   },
   {
-    title: 'Mobile-first responsive web development',
+    title: 'Mobile-first responsive UI development',
     subtitle: '',
   },
   {
@@ -35,6 +35,6 @@ export const skillsData: ISkillDetail[] = [
   },
   {
     title: 'Game Development',
-    subtitle: '(JavaScript, C#/Unity)',
+    subtitle: '(JavaScript, C#/Unity, Java)',
   },
 ]
