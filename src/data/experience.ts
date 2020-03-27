@@ -12,10 +12,11 @@ export const experienceData: IExperienceDetail[] = [
       'Collaborated with UX and Product to set quarterly plans and ensure technical feasibility',
       'Led frontend dev team in building two greenfield apps for scheduling and managing housekeeping teams around the world',
       'Acted as a guiding voice for setting development standards, choosing tooling & libraries, and helping maintain an effective team culture',
+      'Built API endpoints (Django) in conjunction with frontend features',
       'Led cross-team instructional sessions to share solutions to common problems',
       'Developed and executed a technical interview process specific to the team’s requirements',
       'Provided mentoring and guidance for more junior developers',
-      'Technologies used: TypeScript, React/Redux, PWA, Sass, Jest, TestCafe, Django, CircleCI',
+      'Technologies used: TypeScript, React/Redux, PWA, Sass, Jest, TestCafe, Django + JSON:API',
     ],
   },
   {
@@ -27,6 +28,7 @@ export const experienceData: IExperienceDetail[] = [
     bullets: [
       'Worked with functional team to plan, build, and maintain features in our part of the app',
       'Collaborated on documentation both before and after feature releases',
+      'Built API endpoints (Rails) in conjunction with frontend features',
       'Technologies used: React/Redux, Backbone/Marionette, Mocha/Chai, CoffeeScript, Sass, Rails, Vagrant, PostgreSQL',
     ],
   },
