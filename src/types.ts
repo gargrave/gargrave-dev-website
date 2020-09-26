@@ -1,29 +1,28 @@
-export interface IEducationDetail {
+export type EducationDetail = {
   location: string
   title: string
 }
 
-export interface IExperienceDetail {
+export type ExperienceDetail = {
   bullets: string[]
   company: string
   dates: string
   jobTitle: string
-  location: string
   summary: string
 }
 
-export interface ISkillDetail {
+export type SkillDetail = {
   subtitle: string
   title: string
 }
 
-export interface IProjectLink {
+export type ProjectLink = {
   title: string
   url: string
 }
 
-export interface IProjectDetail {
-  links: IProjectLink[]
+export type ProjectDetail = {
+  links: ProjectLink[]
   subtitle: string
   summary: string[]
   title: string

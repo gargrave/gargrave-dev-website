@@ -1,15 +1,18 @@
+import styled from '@emotion/styled'
 import * as React from 'react'
-
-import styles from './About.module.scss'
 
 const RESUME_LINK =
   'https://www.dropbox.com/s/94otn62reycxas3/GabeHargrave-Resume.pdf?dl=0'
 const LINKED_IN_LINK = 'https://www.linkedin.com/in/gabe-hargrave-264322133'
 const GITHUB_LINK = 'https://github.com/gargrave'
 
-export type AboutProps = {}
+const LinksContainer = styled.ul`
+  li {
+    line-height: 1.5rem;
+  }
+`
 
-export const About: React.FC<AboutProps> = () => (
+export const AboutSection: React.FC = () => (
   <section id="about">
     <h2>About</h2>
     <p>
@@ -30,7 +33,8 @@ export const About: React.FC<AboutProps> = () => (
       insights, revelations, or whatever. You can find a multitude of ways to
       contact me below:
     </p>
-    <ul className={styles.links}>
+
+    <LinksContainer>
       <li>
         <a href={RESUME_LINK}>Download my resume (PDF)</a>
       </li>
@@ -40,6 +44,6 @@ export const About: React.FC<AboutProps> = () => (
       <li>
         <a href={GITHUB_LINK}>View my GitHub profile</a>
       </li>
-    </ul>
+    </LinksContainer>
   </section>
 )

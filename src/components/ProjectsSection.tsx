@@ -1,13 +1,19 @@
+import styled from '@emotion/styled'
 import * as React from 'react'
 
-import { IProjectDetail } from '../../types'
-import { ProjectDetail } from './Detail'
+import { ProjectDetail } from '../types'
+import { Project } from './Project'
 
-import styles from './Projects.module.scss'
+const ProjectDetailsContainer = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+`
 
-export type ProjectsProps = { data: IProjectDetail[] }
+type ProjectsSectionProps = { data: ProjectDetail[] }
 
-export const Projects: React.FC<ProjectsProps> = ({ data }) => {
+export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ data }) => {
   return (
     <section id="projects">
       <h2>Personal Projects and Experiments</h2>
@@ -39,11 +45,11 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
         for many more various projects and experiments
       </p>
 
-      <div className={styles.projectDetailsSection}>
+      <ProjectDetailsContainer>
         {data.map(project => (
-          <ProjectDetail key={project.title} project={project} />
+          <Project key={project.title} project={project} />
         ))}
-      </div>
+      </ProjectDetailsContainer>
     </section>
   )
 }

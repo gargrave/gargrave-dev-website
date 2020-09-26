@@ -1,40 +1,85 @@
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 import * as React from 'react'
 
-import { About, Education, Experience, Projects, Skills } from './components'
+import { screenSizeLg } from './styles/mixins'
+import {
+  AboutSection,
+  EducationSection,
+  ExperienceSection,
+  ProjectsSection,
+  SkillsSection,
+} from './components'
 import { educationData, experienceData, projectsData, skillsData } from './data'
-
-import styles from './App.module.scss'
-
-export type AppProps = {}
 
 const copyrightString = () => {
   const year = new Date().getFullYear()
   return `© ${year} Gabe Hargrave`
 }
 
-export const App: React.FC<AppProps> = () => {
+const AppContainer = styled.div`
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 0;
+  color: #242424;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+
+  ${screenSizeLg(css`
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    padding: 24px 50px;
+  `)}
+`
+
+const Title = styled.h1`
+  color: #6b6b6b;
+  font-weight: normal;
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+
+  ${screenSizeLg(css`
+    margin-top: 1.5rem;
+    margin-bottom: 40px;
+    text-align: left;
+  `)}
+`
+
+const Copyright = styled.p`
+  color: #8f8f8f;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  margin-top: 24px;
+  text-align: center;
+`
+
+type AppProps = {
+  className?: string
+}
+
+export const App: React.FC<AppProps> = ({ className }) => {
   return (
-    <div className={styles.contentContainer}>
+    <AppContainer className={className}>
       <header role="banner">
-        <h1 className={styles.title}>Gabe Hargrave</h1>
+        <Title>Gabe Hargrave</Title>
       </header>
 
       <main>
         <hr aria-hidden="true" />
-        <About />
+        <AboutSection />
         <hr aria-hidden="true" />
-        <Skills data={skillsData} />
+        <SkillsSection data={skillsData} />
         <hr aria-hidden="true" />
-        <Experience data={experienceData} />
+        <ExperienceSection data={experienceData} />
         <hr aria-hidden="true" />
-        <Education data={educationData} />
+        <EducationSection data={educationData} />
         <hr aria-hidden="true" />
-        <Projects data={projectsData} />
+        <ProjectsSection data={projectsData} />
       </main>
 
       <footer role="contentinfo">
-        <p className={styles.copyright}>{copyrightString()}</p>
+        <Copyright>{copyrightString()}</Copyright>
       </footer>
-    </div>
+    </AppContainer>
   )
 }

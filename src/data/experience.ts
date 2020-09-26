@@ -1,18 +1,32 @@
-import { IExperienceDetail } from '../types'
+import { ExperienceDetail } from '../types'
 
-export const experienceData: IExperienceDetail[] = [
+export const experienceData: ExperienceDetail[] = [
   {
     jobTitle: 'Senior Software Engineer',
     company: 'Vacasa',
-    location: 'Portland, OR',
-    dates: '10/2018 to Present',
+    dates: '09/2020 to Present',
+    summary:
+      'Senior frontend engineer building housekeeping scheduling and management tools',
+    bullets: [],
+  },
+  {
+    jobTitle: 'Senior Frontend Engineer',
+    company: 'Deliverr',
+    dates: '04/2020 to 09/2020',
+    summary:
+      'Senior frontend engineer working on 2-day shipping fulfillment platform',
+    bullets: [],
+  },
+  {
+    jobTitle: 'Senior Software Engineer',
+    company: 'Vacasa',
+    dates: '10/2018 to 04/2020',
     summary:
       'Senior frontend engineer building housekeeping scheduling and management tools',
     bullets: [
       'Collaborated with UX and Product to set quarterly plans and ensure technical feasibility',
       'Led frontend dev team in building two greenfield apps for scheduling and managing housekeeping teams around the world',
       'Acted as a guiding voice for setting development standards, choosing tooling & libraries, and helping maintain an effective team culture',
-      'Built API endpoints (Django) in conjunction with frontend features',
       'Led cross-team instructional sessions to share solutions to common problems',
       'Developed and executed a technical interview process specific to the team’s requirements',
       'Provided mentoring and guidance for more junior developers',
@@ -22,7 +36,6 @@ export const experienceData: IExperienceDetail[] = [
   {
     jobTitle: 'Frontend Engineer',
     company: 'Opal',
-    location: 'Portland, OR',
     dates: '08/2017 to 10/2018',
     summary: 'Frontend engineer on _Opal_, a marketing collaboration platform',
     bullets: [
@@ -35,7 +48,6 @@ export const experienceData: IExperienceDetail[] = [
   {
     jobTitle: 'Frontend Engineer',
     company: 'West Corporation',
-    location: 'Portland, OR',
     dates: '04/2015 to 08/2017',
     summary:
       'Frontend engineer on _IER_, an event registration e-commerce platform',
@@ -50,7 +62,6 @@ export const experienceData: IExperienceDetail[] = [
   {
     jobTitle: 'Lead Game & Web Developer',
     company: 'We Did It Games',
-    location: 'Portland, OR',
     dates: '01/2011 to 03/2015',
     summary: 'Lead game and web developer for game development team',
     bullets: [

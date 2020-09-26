@@ -1,6 +1,6 @@
-import { IProjectDetail } from '../types'
+import { ProjectDetail } from '../types'
 
-export const projectsData: IProjectDetail[] = [
+export const projectsData: ProjectDetail[] = [
   {
     title: 'React Simple Select',
     subtitle:
@@ -25,6 +25,19 @@ export const projectsData: IProjectDetail[] = [
       {
         title: 'React Magic List on GitHub',
         url: 'https://github.com/gargrave/react-magic-list',
+      },
+    ],
+  },
+  {
+    title: 'Velcrostrip',
+    subtitle: 'A general-use React UI component library',
+    summary: [
+      'An experiment at making a general-use component library for React, inspired by [Shoelace CSS](https://v1.shoelace.style/).',
+    ],
+    links: [
+      {
+        title: 'Velcrostrip on GitHub',
+        url: 'https://github.com/gargrave/velcrostrip',
       },
     ],
   },

@@ -1,12 +1,12 @@
 import * as React from 'react'
 
-import { IEducationDetail } from '../../types'
+import { EducationDetail } from '../types'
 
 import styles from './Education.module.scss'
 
-export type EducationProps = { data: IEducationDetail[] }
+type EducationSectionProps = { data: EducationDetail[] }
 
-export const Education: React.FC<EducationProps> = ({ data }) => {
+export const EducationSection: React.FC<EducationSectionProps> = ({ data }) => {
   return (
     <section id="education">
       <h2>Education</h2>

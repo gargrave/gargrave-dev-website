@@ -1,6 +1,6 @@
-import { IEducationDetail } from '../types'
+import { EducationDetail } from '../types'
 
-export const educationData: IEducationDetail[] = [
+export const educationData: EducationDetail[] = [
   {
     location: 'Portland Community College - Portland, OR',
     title: 'A.A.S in Computer Information Systems',
