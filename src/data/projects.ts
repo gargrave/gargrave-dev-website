@@ -66,10 +66,6 @@ export const projectsData: ProjectDetail[] = [
     ],
     links: [
       {
-        title: 'Bookly Jr. live demo',
-        url: 'https://bookly-prod.firebaseapp.com/account/register',
-      },
-      {
         title: 'Bookly Jr. on GitHub',
         url: 'https://github.com/gargrave/bookly-client-firebase',
       },
@@ -123,10 +119,6 @@ export const projectsData: ProjectDetail[] = [
       "**Note**: The backend is deployed on a free Heroku dyno, so if it takes a few seconds to spin up, don't panic! Everything is going to be okay, I promise!",
     ],
     links: [
-      {
-        title: 'GameOn live demo',
-        url: 'https://www.gameon-app.com',
-      },
       {
         title: 'GameOn on GitHub (frontend)',
         url: 'https://github.com/gargrave/gameon-client-quasar',
